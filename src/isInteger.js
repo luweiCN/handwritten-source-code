@@ -3,4 +3,6 @@
  * @export
  * @param {*} x
  */
-export default function isInteger(x) {}
+export default function isInteger(x) {
+    return typeof x === "number" && parseInt(x) === x;
+}
